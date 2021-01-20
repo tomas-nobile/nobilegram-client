@@ -1,0 +1,39 @@
+.auth {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+img {
+  width: 250px;
+}
+
+.container-form {
+  width: 400px;
+  background-color: #fff;
+  padding: 20px 50px;
+  border: 1px solid #dbdbdb;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.change-form {
+  margin-top: 10px;
+  width: 400px;
+  background-color: #fff;
+  padding: 20px 50px;
+  border: 1px solid #dbdbdb;
+  text-align: center;
+  border-radius: 5px;
+}
+.change-form span {
+  color: #0095f6;
+  font-weight: bold;
+}
+.change-form span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

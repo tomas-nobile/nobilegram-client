@@ -14,8 +14,9 @@ export default function UsersNotFolloweds() {
     const {getNotFolloweds}= data
 
     return (
+        
         <div className="users-not-followeds">
-            
+            <h3>Usuarios no seguidos</h3>
             {map(getNotFolloweds,(user,index)=>(
                 <Link key={index} to={`/${user.username}`} className="users-not-followeds__user">
                     <Image src={user.avatar || ImageNotFound} avatar />

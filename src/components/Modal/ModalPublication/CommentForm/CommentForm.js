@@ -9,7 +9,6 @@ import "./CommentForm.scss";
 export default function CommentForm(props) {
   const { publication } = props;
   const [addComment] = useMutation(ADD_COMMENT)
-
   const formik = useFormik({
     initialValues: {
       comment: "",
@@ -19,13 +18,16 @@ export default function CommentForm(props) {
     }),
     onSubmit:async (formData) => {
         try {
-            await addComment({
+          
+          await addComment({
                 variables:{
                     input:{
                         idPublication:publication.id,
                         comment:formData.comment
                     }
+                
                 }
+                
             });
             formik.handleReset()
         } catch (error) {

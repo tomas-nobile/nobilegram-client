@@ -1,7 +1,7 @@
 import React from "react";
 import { Form, Button } from "semantic-ui-react";
 import { useFormik } from "formik";
-import *as Yup from 'yup';
+import * as Yup from 'yup';
 import {toast} from 'react-toastify'
 import {useMutation} from '@apollo/client';
 import {REGISTER} from '../../../gql/user'
